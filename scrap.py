@@ -11,7 +11,7 @@ csv_writer = csv.writer(csv_file)
 
 csv_writer.writerow(["header","paragraph","video_link"])
 
-# Fetching the html contents of the target website
+# Requests for the html document of the target website
 html_file = requests.get("https://coreyms.com").text
 
 # Create a Soup
